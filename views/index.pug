@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .row
+    table(class= "table-striped table-striped table-hover")
+      thead
+        tr
+          th ticker
+          th business
+          th Price
+          th P/E	
+          th P/BV	
+          th Paid-up	
+          th Market Cap
+          th EV	
+          th EBITDA	
+          th EV/EBITDA	
+          th Cash_2017	
+          th Cash_2016	
+          th Cash_2015	
+          th Cash_2014
+      tbody
+        each company in companies
+          tr
+            td
+              |div ticker[company]
+            td
+              |div company.business
+            td
+              |div company.Price
+            td
+              |div copany.P/E
+
